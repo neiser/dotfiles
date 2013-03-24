@@ -1,3 +1,5 @@
 [user]
 	name = Andreas Neiser
 	email = andreas.neiser@gmail.com
+[push]
+	default = tracking
