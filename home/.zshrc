@@ -36,9 +36,12 @@ plugins=(git git-extras history-substring-search last-working-dir dircycle)
 
 case $HOST in
     hbar)
-        plugins+=(archlinux)
+        plugins+=(archlinux systemd)
         alias y="yaourt"
 	;;
+    ps139143)
+	plugins+=(debian)
+    	;;
     *)
 	echo "Host not recognized in .zshrc"
 esac
