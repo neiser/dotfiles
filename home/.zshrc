@@ -34,6 +34,9 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git git-extras history-substring-search last-working-dir dircycle)
 
+export LC_ALL=en_US.utf8
+export LANG=en_US.utf8
+
 case $HOST in
     hbar)
         plugins+=(archlinux systemd)
