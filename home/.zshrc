@@ -32,13 +32,19 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras archlinux systemd
-	 history-substring-search last-working-dir dircycle)
+plugins=(git git-extras history-substring-search last-working-dir dircycle)
 
+case $HOST in
+    hbar)
+        plugins+=(archlinux)
+        alias y="yaourt"
+	;;
+    *)
+	echo "Host not recognized in .zshrc"
+esac
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 export EDITOR=emacs
-alias y="yaourt"
 alias homesick="$HOME/.homeshick"
