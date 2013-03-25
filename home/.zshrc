@@ -46,6 +46,10 @@ case $HOST in
     ps139143)
 	plugins+=(debian)
     	;;
+    normandy)
+	plugins+=(debian)
+        export GIT_AUTHOR_EMAIL="neiser@kph.uni-mainz.de"
+    	;;
     *)
 	echo "Host not recognized in .zshrc"
 esac
