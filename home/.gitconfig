@@ -3,3 +3,16 @@
 	email = andreas.neiser@gmail.com
 [push]
 	default = tracking
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[merge]
+	tool = mymeld
+	conflictstyle = diff3
+[mergetool "mymeld"]
+	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $BASE $REMOTE $MERGED
+[alias]
+	logk = log --graph --pretty=oneline --abbrev-commit --decorate
+[core]
+	autocrlf = input
