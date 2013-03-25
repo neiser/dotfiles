@@ -49,6 +49,7 @@ case $HOST in
     normandy)
 	plugins+=(debian)
         export GIT_AUTHOR_EMAIL="neiser@kph.uni-mainz.de"
+	export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"	
     	;;
     *)
 	echo "Host not recognized in .zshrc"
