@@ -16,4 +16,4 @@
 	logk = log --graph --pretty=oneline --abbrev-commit --decorate
 [core]
 	autocrlf = input
-	excludesfile = /home/neiser/.gitignore_global
+	excludesfile = ~/.gitignore_global
