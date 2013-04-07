@@ -38,6 +38,9 @@ export LC_ALL=en_US.utf8
 export LANG=en_US.utf8
 eval `dircolors`
 
+export EDITOR="emacsclient -c -a ''"
+alias homesick="$HOME/.homeshick"
+
 case $HOST in
     hbar)
         plugins+=(archlinux systemd)
@@ -59,9 +62,6 @@ esac
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export EDITOR=emacs
-alias homesick="$HOME/.homeshick"
 
 # colors in manpages with less
 
