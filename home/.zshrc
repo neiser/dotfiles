@@ -55,6 +55,11 @@ case $HOST in
 	export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 	alias root="root -l"
     	;;
+    lxhadeb07)
+        export GIT_AUTHOR_EMAIL="neiser@kph.uni-mainz.de"
+	export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+	export EDITOR=nano
+    	;;
     a2trb)
 	plugins+=(debian)
         export GIT_AUTHOR_EMAIL="neiser@kph.uni-mainz.de"
