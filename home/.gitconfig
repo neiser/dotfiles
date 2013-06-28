@@ -2,7 +2,7 @@
 	name = Andreas Neiser
 	email = andreas.neiser@gmail.com
 [push]
-	default = tracking
+	default = upstream
 [color]
 	branch = auto
 	diff = auto
